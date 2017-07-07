@@ -1,10 +1,10 @@
 package control;
 
-import java.util.Date;
 
 /**
  *
  * @author elias.andrade
+ * @UltimaModificação: 07/07/17
  */
 public class Evento {
     private int id;
@@ -99,5 +99,14 @@ public class Evento {
     
     public void setHoraTermino(String horaTermino){
         this.horaTermino = horaTermino;
+    }
+    
+    public void verEvento(){
+        System.out.println("Informações do Evento");
+        System.out.println(getTipo());
+        System.out.println(getLocal());
+        System.out.println(getData());
+        System.out.println(getHoraInicio());
+        System.out.println(getHoraTermino());
     }
 }

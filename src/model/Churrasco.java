@@ -1,14 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package model;
+
+import control.Evento;
 
 /**
  *
  * @author elias.andrade
+ * @UltimaModificação: 07/07/17
  */
-public class Churrasco {
+public class Churrasco extends Evento{
     
+    public Churrasco(String tipo, String local, String data, String horaInicio, String horaTermino){
+        super(tipo, local, data, horaInicio, horaTermino);
+    }
 }
