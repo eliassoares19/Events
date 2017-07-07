@@ -1,16 +1,16 @@
 package view;
 
+import control.Evento;
+
 /**
  *
- * @author elias.andrade
+ * @author elias
+ * @UltimaModificação: 07/07/17
  */
 public class Events {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+              
+        Evento teste = new Evento("churrasco", "Rio das Ostras", "19/06/17", "18:00:00", "23:00:00");
     }
     
 }
