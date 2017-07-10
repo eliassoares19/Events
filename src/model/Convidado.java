@@ -1,9 +1,12 @@
 package model;
 
+import control.Evento;
+import java.util.ArrayList;
+
 /**
  *
  * @author elias
- * @UltimaModificação: 30/05/17
+ * @UltimaModificação: 10/07/17
  */
 public class Convidado {
     private String genero;
@@ -11,6 +14,8 @@ public class Convidado {
     private String estiloMusical;
     private int idade;
     private String nome;
+    private ArrayList<Evento> eventos = new ArrayList<>();
+    Lista lista = new Lista();
     
     //Construtor da classe Convidado
     public Convidado(String genero, boolean bebidaAlcoolica, String estiloMusical, int idade, String nome){
@@ -42,6 +47,10 @@ public class Convidado {
         return this.nome;
     }
     
+    public ArrayList getEventos(){
+        return this.eventos;
+    }
+    
     
     //Setters-----------------------------------------------------------------------------------------------
     public void setGenero(String genero){
@@ -62,5 +71,9 @@ public class Convidado {
     
     public void setNome(String nome){
         this.nome = nome;
+    }
+    
+    public void setEventos(ArrayList eventos){
+        this.eventos = eventos;
     }
 }

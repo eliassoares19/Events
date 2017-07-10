@@ -1,10 +1,13 @@
 package control;
 
+import java.util.ArrayList;
+import model.Convidado;
+
 
 /**
  *
  * @author elias.andrade
- * @UltimaModificação: 07/07/17
+ * @UltimaModificação: 10/07/17
  */
 public class Evento {
     private int id;
@@ -16,6 +19,7 @@ public class Evento {
     private String descricao;
     private String horaInicio;
     private String horaTermino;
+    private ArrayList<Convidado> convidados = new ArrayList<>();
     
     //Construtor da classe Evento
     public Evento(String tipo, String local, String data, String horaInicio, String horaTermino){
